@@ -9,7 +9,7 @@ if __name__ == "__main__":
     plt.figure(figsize=(20, 16))
     sns.heatmap(
         corr_matrix,
-        cmap="Oranges", # we ll choose the prettiest 
+        cmap="Oranges",
         center=0,
         vmin=-1, vmax=1,
         xticklabels=True,
@@ -17,5 +17,5 @@ if __name__ == "__main__":
     )
     plt.title("Correlation matrix")
     plt.tight_layout()
-    plt.savefig("../imgs/correlation_matrix.png", dpi=150)
+    plt.savefig("../correlation_matrix.png", dpi=150)
     plt.show()

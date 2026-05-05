@@ -3,7 +3,8 @@ from typing import List, Tuple
 import numpy as np
 import pandas as pd
 
-DATA_DIR = Path(__file__).resolve().parent.parent / "data"
+DATA_DIR = Path.cwd() / "data"
+print(DATA_DIR)
 COMMUNE_ID_COL = "CommuneID"
 COMMUNE_NAME_COL = "CommuneName"
 CANTON_ID_COL = "CantonID"
